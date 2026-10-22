@@ -1,0 +1,38 @@
+{
+  "id": "echo-pitch-shift",
+  "name": "歌曲变调助手",
+  "version": "1.0.0",
+  "description": "基于音源流代理实现的实时歌曲升降调插件",
+  "author": "FuroOuO",
+  "main": "index.js",
+  "requires": {
+    "echoMusicVersion": ">=2.2.0"
+  },
+  "capabilities": {
+    "audioSource": true,
+    "process": true,
+    "webServer": true,
+    "localFiles": true
+  },
+  "contributes": {
+    "windows": [
+      {
+        "id": "pitch-panel",
+        "type": "floating",
+        "title": "歌曲升降调控制",
+        "main": "panel.js",
+        "style": "panel.css",
+        "defaultWidth": 320,
+        "defaultHeight": 220,
+        "minWidth": 280,
+        "minHeight": 200,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "resizable": false,
+        "movable": true,
+        "rememberBounds": true
+      }
+    ]
+  }
+}

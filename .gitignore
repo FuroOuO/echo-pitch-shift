@@ -1,0 +1,24 @@
+# Binaries (FFmpeg executables are > 100MB and exceed GitHub limits)
+bin/*.exe
+bin/ffmpeg
+bin/ffprobe
+bin/ffplay
+*.exe
+
+# Audio test files
+test.mp3
+*.mp3
+
+# Node dependencies & logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS & Editor metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.log
